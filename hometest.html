@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="en-in" http-equiv="Content-Language" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Untitled 1</title>
+<style type="text/css">
+*,::after,::before{text-shadow:none!important;box-shadow:none!important}*,::after,::before{box-sizing:border-box}a{color:#007bff;text-decoration:none;background-color:transparent}
+
+p {
+	font-size: 18px;
+	color: #73778e;
+	line-height: 1.6;
+}
+
+h2,h3,p{orphans:3;widows:3}p{margin-top:0;margin-bottom:1rem}
+
+img {
+	max-width: 100%;
+}
+
+img,tr{page-break-inside:avoid}img{vertical-align:middle;border-style:none}
+
+.hero-social-warp {
+	position: absolute;
+	height: 100%;
+	right: 60px;
+	top: 0;
+	z-index: 5;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+.hero-social a {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	width: 50px;
+	height: 50px;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	margin-bottom: 15px;
+	color: #fff;
+	font-size: 22px;
+}
+
+.fa{display:inline-block;font:normal normal normal 14px/1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+.auto-style1 {
+	text-align: center;
+}
+.auto-style2 {
+	font-size: xx-large;
+}
+</style>
+</head>
+
+<body>
+
+<div align="relative" style="height: 376px">	
+			<p align="center" id="date"></p>
+			<div class="auto-style1">
+		<script>
+		var d = new Date();
+		document.getElementById("date").innerHTML = d;
+		</script>
+		<div class="hero-social-warp">
+			<div class="hero-social">
+				<a href=""><i class="fa fa-facebook"></i><i class="fa fa-linkedin"></i><i class="fa fa-twitter"></i><i class="fa fa-instagram"></i><i class ="fa fa-youtube-play"></i></a>
+				<i>
+				<a href="logout.php"><img src="img/logout.png"</i></a>
+			</div>
+		</div>
+		
+<script>
+        function Setcookie()
+        {
+                document.cookie="uname="+document.getElementById("uname").value+";expires=Thu, 10 Dec 2020 23:50:00 UTC";;
+                 window.location.href("test.html");
+               
+            
+        }
+        window.onload=function()
+        {
+            if(document.cookie.length!=0)
+            {
+                var Allcookies,Temp;
+                Allcookies=document.cookie.split(";");   
+                for(var i=0;i<Allcookies.length;i++)
+                {
+                    Temp=Allcookies[i].split("=");
+                    if(Temp[0]=="username")
+                    {
+                        document.getElementById("uname").value=Temp[1];
+                    }
+                                   }
+            }
+        }
+    </script><span class="auto-style2">WELCOME</span><label id="uname">&nbsp; </label>
+			</div>
+
+</body>
+
+</html>
